@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="background-image: url('https://smartcampuses.com/wp-content/uploads/revslider/web-agency-home-content/Slide-2-Background.jpg'); background-size: cover;">
+ 
+
+    <h2 class="text-3xl text-center pt-[20px] font-bold text-white"><%= title %></h2>
+    <a href="/"><div class="text-start pt-2 pl-[300px]">
+        <button type="submit" class="btn btn-success">Home</button></div></a>
+<div class="border-2 border-gray-600 mx-[300px] mt-[40px] bg-slate-200">
+  
+  <form action="/view" method="get" class="p-3">
+        <h1 class="text-3xl font-bold text-center"><%= user.name %>'s Details</h1>
+        <h1 class="text-xl font-bold">Faculty-Profile</h1>
+        
+        <div class="pl-[30px] font-medium text-lg"><span>Faculty id:</span> <%= user.id %></div>
+        <div class="pl-[30px] font-medium text-lg"><span>name :</span> <%= user.name %></div>
+        <div class="pl-[30px] font-medium text-lg"><span>email :</span> <%= user.email %></div>
+        <div class="pl-[30px] font-medium text-lg"><span>phone no:</span> <%= user.phone_no %></div>
+        <div class="pl-[30px] font-medium text-lg"><span>age:</span> <%= user.age %></div>
+        <div class="pl-[30px] font-medium text-lg"><span>designation:</span> <%= user.desig %></div>
+        
+          
+    
+        <h1 class="text-xl font-bold">Address Details</h1>
+        
+        <div class="pl-[30px] font-medium text-lg"> <%= user.address %></div>
+        <h1 class="text-xl font-bold">Education</h1>
+        <div class="pl-[30px] font-medium text-lg"><span>Qualification:</span> <%= user.qual %></div>
+        
+        <h1 class="text-xl font-bold">Experience</h1>
+        
+        <div class="pl-[30px] font-medium text-lg"> <%= user.exp %></div>
+        <h1 class="text-xl font-bold">Publications</h1>
+        
+        <div class="pl-[30px] font-medium text-lg"> <%= user.pub %></div>
+        
+  </form>
+</div>
+
+
+ 
+</body>
+</html>
